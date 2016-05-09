@@ -1,0 +1,30 @@
+*{
+    font-family:$main-font, sans-serif;
+    color:$off-black;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family:$second-font;
+}
+
+h1{
+	font-weight:800;
+	font-size:$extra-large;
+    margin-bottom:$large;	
+}
+
+h2{
+    font-weight:400;
+    font-size:$large;
+    margin-bottom:$extra-small;
+}
+
+p{
+    line-height: 150%;
+    padding-bottom:20px;
+    font-size:$small;
+}
+
+a{
+    font-family:inherit;
+}

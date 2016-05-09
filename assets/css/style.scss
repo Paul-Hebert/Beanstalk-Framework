@@ -1,0 +1,31 @@
+@import 'reset';
+@import 'vars';
+@import 'mixins-extends';
+@import 'grid';
+@import 'typography';
+
+body{
+	padding:$extra-large;
+}
+
+header{
+
+	h1{
+		font-size:$extra-extra-large;
+	}
+
+	a{
+		text-decoration:none;
+		color:$off-black;
+	}
+
+	nav{
+		float:right;
+
+		a{
+			padding:$medium;
+		}
+	}
+}
+
+@import 'responsive';
