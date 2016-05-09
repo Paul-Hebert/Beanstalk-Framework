@@ -12,11 +12,11 @@
 
 	<body>
 		<header>
-			<nav>
-				<a href="#">Link 1</a>
-				<a href="#">Link 2</a>
-				<a href="#">Link 3</a>
-			</nav>
+			<?php include('assets/php/nav.php'); ?>
 
 			<h1><a href="index.php">Framework</a></h1>
+
+			<div id="menu-toggle" class="mobile">
+				<?php include('assets/svgs/hamburger.php'); ?>
+			</div>
 		</header>

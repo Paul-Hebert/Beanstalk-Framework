@@ -5,27 +5,20 @@
 @import 'typography';
 
 body{
+	background:$off-white;
 	padding:$extra-large;
 }
 
-header{
-
-	h1{
-		font-size:$extra-extra-large;
-	}
+header, footer{
 
 	a{
 		text-decoration:none;
 		color:$off-black;
 	}
+}
 
-	nav{
-		float:right;
-
-		a{
-			padding:$medium;
-		}
-	}
+main{
+	padding:$extra-large 0;
 }
 
 @import 'responsive';
