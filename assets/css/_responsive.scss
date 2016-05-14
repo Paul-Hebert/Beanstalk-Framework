@@ -19,11 +19,13 @@
 		top:0px;
 		bottom:0px;
 		background:$off-white;
-		width:100%;
-		@include transition_mixin(left 300ms);
+		width:0%;
+		overflow:hidden;
+		@include transition_mixin(all $base-duration);
 
 		&.open{
 			left:0%;
+			width:100%;
 		}
 
 		a{
@@ -44,7 +46,6 @@
             fill:none;
             stroke:$off-black;
             stroke-width:5;
-            stroke-miterlimit:10;
 
             .middle-line{
                 @include transition_mixin(opacity 300ms);

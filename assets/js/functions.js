@@ -34,7 +34,7 @@ function initialize_mobile_menu(){
 // Borrowed functions
 /*****************************************************************************************************/
 
-// Borrowed animate function works on SVG hamburger icon.
+// Function allows you to animate SVG attributes like you would CSS properties. http://stackoverflow.com/a/17361309
 function animate($el, attrs, speed) {
     speed = speed || 400;
     var start = {},
@@ -50,7 +50,7 @@ function animate($el, attrs, speed) {
         $.each(attrs, function(k,v) {
             var pst = (v - start[k])/steps;
             $el.attr(k, function(i, old) {
-                return +old + pst;
+                return + old + pst;
             });
         });
       if ( --cycles )
