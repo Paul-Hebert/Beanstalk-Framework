@@ -2,6 +2,7 @@
 @import 'vars';
 @import 'mixins-extends';
 @import 'grid';
+@import 'forms';
 @import 'typography';
 
 body{
@@ -10,6 +11,10 @@ body{
 }
 
 header, footer{
+
+	h1{
+		font-size:$large;
+	}
 
 	a{
 		text-decoration:none;
