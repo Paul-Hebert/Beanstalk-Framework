@@ -1,5 +1,7 @@
 $(function() {
 	initialize_mobile_menu();
+
+    initialize_contact_form();	
 });
 
 function initialize_mobile_menu(){
@@ -28,6 +30,48 @@ function initialize_mobile_menu(){
 
 		$('header nav').toggleClass('open');
 	});
+}
+
+function initialize_contact_form(){
+	$( ".contact_form" ).on( "submit", function( event ) {
+	    event.preventDefault();
+
+	    if ( validate() ){
+		    var form_data = $('.contact_form').serialize();
+
+		    $.ajax({
+			    type : 'POST',
+			    url : 'assets/php/utilities/email.php',
+			    data : form_data,
+			    success: function(data){
+			    	$('.contact_form *').animate({'opacity':0},300);
+			    	$('.contact_form').append(data);
+			    	$('#success').fadeIn(300);
+			    }
+			});
+		}
+	});
+}
+
+function validate(){
+	$('.error').removeClass('error');
+	$('#error_text').remove();
+
+	$('.required').each(function(){
+		if ( $(this).val() === '' || $(this).val() === null || $(this).val() === undefined ){
+			$(this).addClass('error');
+			$(this).change(function(){ $(this).removeClass('error') });
+		}
+	});
+
+	if ( $('.error').length > 0 ){
+		$('<div id="error_text">Please fill out all required fields above. Required fields have a red outline.</div>').insertBefore('input[type=submit]');
+		$('#error_text').slideDown(350);
+
+		return false;
+	} else{
+		return true;
+	}
 }
 
 /*****************************************************************************************************/
