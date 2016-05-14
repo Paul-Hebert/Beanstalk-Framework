@@ -16,7 +16,7 @@
 		<header>
 			<?php include('assets/php/nav.php'); ?>
 
-			<h1><a href="index.php">Beansprout</a></h1>
+			<h1><a href="index.php">Beanstalk</a></h1>
 
 			<div id="menu-toggle" class="mobile">
 				<?php include('assets/svgs/hamburger.php'); ?>
