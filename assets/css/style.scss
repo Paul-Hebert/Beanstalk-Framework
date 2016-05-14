@@ -7,13 +7,13 @@
 
 body{
 	background:$off-white;
-	padding:$extra-large;
+	padding:$size-8;
 }
 
 header, footer{
 
 	h1{
-		font-size:$large;
+		font-size:$size-7;
 	}
 
 	a{
@@ -23,7 +23,7 @@ header, footer{
 }
 
 main{
-	padding:$extra-large 0;
+	padding:$size-8 0;
 }
 
 @import 'responsive';

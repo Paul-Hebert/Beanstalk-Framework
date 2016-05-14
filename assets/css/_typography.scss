@@ -9,18 +9,18 @@ h1, h2, h3, h4, h5, h6{
 }
 
 h1{
-	font-size:$extra-large;
-    margin-bottom:$large;	
+	font-size:$size-8;
+    margin-bottom:$size-7;	
 }
 
 h2{
-    font-size:$large;
-    margin-bottom:$medium;
+    font-size:$size-7;
+    margin-bottom:$size-6;
 }
 
 p{
-    font-size:$small;
-    padding-bottom:$extra-small;
+    font-size:$size-5;
+    padding-bottom:$size-3;
 }
 
 a{

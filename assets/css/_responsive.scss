@@ -4,13 +4,13 @@
 	}
 
 	h1{
-		font-size:$large;
-	    margin-bottom:$medium;	
+		font-size:$size-7;
+	    margin-bottom:$size-6;	
 	}
 
 	h2{
-	    font-size:$medium;
-	    margin-bottom:$small;
+	    font-size:$size-6;
+	    margin-bottom:$size-5;
 	}
 
 	nav{
@@ -31,14 +31,14 @@
 
 		a{
 			display:block;
-			padding:$extra-small;
+			padding:$size-3;
 		}
 	}
 
 	#menu-toggle{
         position:absolute;
-        top:$extra-large;
-        right:$extra-large;
+        top:$size-8;
+        right:$size-8;
         color:$off-black;
         cursor:pointer;
 
@@ -70,7 +70,7 @@
 		float:right;
 
 		a{
-			padding:$medium;
+			padding:$size-6;
 		}
 	}
 }
